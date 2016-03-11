@@ -5,7 +5,7 @@ for i in range(N):
 	if W < L or H < L:
 		print 'UPLOAD ANOTHER'
 	elif W >= L and H >= L:
-		if W = H:
+		if W == H:
 			print 'ACCEPTED'
 		else:
 			print 'CROP IT'

@@ -1,4 +1,4 @@
-t = int(raw_input())
+t = int(raw_input('Enter here >'))
 a,b,c=[],[],[]
 w=0
 for i in range(t):

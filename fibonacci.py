@@ -1,13 +1,15 @@
-t = int(raw_input())
-for a in range(t):
-    n = int(raw_input())
-    sum,i,j = 0,1,2
-    while i < n:
-        i = i + j
-        print i,j
-        if i > 4:
-            j = i - j
-	    if i % 2 == 0 and (sum + i) < n:
-		    sum = sum + i		
-    print sum + 2
-	
+# def facto(number):
+#     if number   ==  0:  return 1
+#     else:
+#         return number*facto(number-1)
+#     
+# number  =   int(raw_input('Input the number>'))
+# print facto(number)
+
+def fibo(number):
+    if number   ==  0:  return 0
+    if number   ==  1:  return 1
+    return  fibo(number-1) + fibo(number-2)
+
+number  =   int(raw_input('Input the number>'))
+print fibo(number)
